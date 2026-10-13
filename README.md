@@ -1,32 +1,91 @@
-# React + TypeScript + Vite
+# Recipe Finder 🍳
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive recipe discovery application built with React, TypeScript, and Vite for the **FlyRank AI Internship — Frontend AI Engineering, Week 3** assignment.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Discover recipes with images, names, categories, and cooking times.
+- Search recipes by name.
+- Filter recipes by category.
+- View ingredients, quantities, and cooking instructions.
+- Add and remove favorite recipes.
+- Save favorites using browser local storage.
+- Responsive design for mobile, tablet, and desktop.
+- Loading, empty, and error states where implemented.
+- Accessible controls and keyboard navigation.
 
-## React Compiler
+*Only list features that are actually implemented and verified.*
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
 
-## Expanding the Oxlint configuration
+- React
+- TypeScript
+- Vite
+- CSS
+- Browser localStorage
+- Recipe API or local sample data, depending on the implementation.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## How AI Assisted Development
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+AI was used as a development assistant throughout the project.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+- **Planning:** Breaking the assignment into manageable features.
+- **Implementation:** Generating and refining React components and TypeScript code.
+- **Debugging:** Identifying errors and evaluating possible fixes.
+- **Code review:** Reviewing generated code for correctness, accessibility, responsiveness, and maintainability.
+- **Documentation:** Recording development decisions and project limitations.
+
+All descriptions should reflect the actual development process.
+
+## Prompts Used During Development
+
+Record the actual prompts used during development, including prompts for:
+
+- Initial application setup and architecture.
+- Recipe search and category filtering.
+- Recipe detail views.
+- Favorites and local storage.
+- Responsive styling and accessibility.
+- Debugging and code review.
+
+For each significant prompt, briefly describe the result and any changes required afterward.
+
+## Manual Improvements and Refactoring
+
+Document at least two genuine improvements made after reviewing AI-generated code.
+
+For each improvement, include:
+
+1. **Issue:** What was incorrect or missing?
+2. **Correction:** What was changed?
+3. **Reason:** Why was the change necessary?
+4. **Verification:** How was the result checked?
+
+Possible areas to review include accessibility, input validation, error handling, responsive layouts, TypeScript types, and unnecessary re-renders. Include only changes that were actually made.
+
+## Known Limitations
+
+Document unfinished features, known bugs, API limitations, and other constraints.
+
+If the application uses local sample data instead of a live recipe API, state that clearly.
+
+## Internship Assignment
+
+- **Program:** FlyRank AI Internship
+- **Track:** Frontend AI Engineering
+- **Assignment:** React App Development with AI
+- **Week:** 3
+- **Project:** Recipe Finder
+
+## Author
+
+**Nalin Tuscano**
+
+B.Tech Information Technology Student  
+St. Francis Institute of Technology, Mumbai
+
+GitHub: https://github.com/nalintuscano0023-boop
+
+---
+
+A learning project focused on AI-assisted frontend development, code review, and iterative improvement.
