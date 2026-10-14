@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Accessible Tabs Styles
+   ========================================================================== */
+
+.tabs-root {
+  display: flex;
+  width: 100%;
+}
+
+.tabs-orientation-horizontal {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tabs-orientation-vertical {
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.tabs-list {
+  display: inline-flex;
+  align-items: center;
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.tabs-list-horizontal {
+  flex-direction: row;
+  width: fit-content;
+}
+
+.tabs-list-vertical {
+  flex-direction: column;
+  align-items: stretch;
+  min-width: 12rem;
+  height: fit-content;
+}
+
+.tab-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #94a3b8;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 150ms ease;
+  user-select: none;
+  outline: none;
+}
+
+.tab-trigger:hover:not(:disabled) {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.tab-trigger:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tab-trigger.tab-selected {
+  color: #ffffff;
+  background-color: #1e293b;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.tab-trigger:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.tab-panel {
+  flex: 1;
+  padding: 1.25rem;
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  outline: none;
+}
+
+.tab-panel:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+}
+
+.tab-panel[hidden] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab-trigger {
+    transition: none;
+  }
+}

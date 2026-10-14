@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Accessible Disclosure Styles
+   ========================================================================== */
+
+.disclosure-root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background-color: #111827;
+  overflow: hidden;
+  transition: border-color 150ms ease;
+}
+
+.disclosure-root.disclosure-open {
+  border-color: rgba(249, 115, 22, 0.35);
+}
+
+.disclosure-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background-color: transparent;
+  color: #f8fafc;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  transition: background-color 150ms ease;
+}
+
+.disclosure-button:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.disclosure-button:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: -2px;
+  background-color: rgba(249, 115, 22, 0.08);
+}
+
+.disclosure-button-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.disclosure-chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+  margin-left: 0.75rem;
+}
+
+.disclosure-chevron-open {
+  transform: rotate(180deg);
+  color: #f97316;
+}
+
+.disclosure-panel {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.disclosure-panel[hidden] {
+  display: none !important;
+}
+
+.disclosure-panel-content {
+  padding: 1.25rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .disclosure-chevron {
+    transition: none;
+  }
+}
